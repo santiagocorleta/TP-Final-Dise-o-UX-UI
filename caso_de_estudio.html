@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Estudio: FixApp — Gestión Urbana Inteligente | Santiago Nahuel Corleta</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE y Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] text-[#1E293B] antialiased flex flex-col min-h-screen">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-[#64748B] hover:text-[#4F46E5] transition-colors">
+                ← Volver al Portfolio
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/santiagocorleta" target="_blank" class="text-sm font-medium text-[#64748B] hover:text-[#4F46E5] transition-colors">GitHub ↗</a>
+                <a href="https://fix-app-pi.vercel.app/" target="_blank" class="bg-[#10B981] hover:bg-[#059669] text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-sm">
+                    Abrir PWA en vivo ↗
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        
+        <!-- HERO DEL CASO DE ESTUDIO -->
+        <section class="py-16 max-w-4xl mx-auto px-6 space-y-6">
+            <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-[#4F46E5]/10 text-[#4F46E5] text-xs font-semibold rounded-full">GovTech / Full-Stack</span>
+                <span class="text-xs text-[#94A3B8]">2026 · Caso de Estudio Técnico</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-[#1E293B] leading-tight">
+                FixApp — Gestión Urbana Inteligente y Cercanía Ciudadana
+            </h1>
+            <p class="text-lg text-[#64748B] leading-relaxed">
+                Solución integral GovTech diseñada para digitalizar, centralizar y optimizar la gestión de incidencias urbanas en tiempo real mediante una PWA rápida y un ecosistema administrativo protegido.
+            </p>
+
+            <!-- Metadata del proyecto -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-[#E2E8F0]">
+                <div>
+                    <span class="text-xs text-[#94A3B8] uppercase font-bold block">Arquitectura</span>
+                    <span class="text-sm font-medium text-[#1E293B]">Modular Full-Stack</span>
+                </div>
+                <div>
+                    <span class="text-xs text-[#94A3B8] uppercase font-bold block">Backend</span>
+                    <span class="text-sm font-medium text-[#1E293B]">FastAPI / Python</span>
+                </div>
+                <div>
+                    <span class="text-xs text-[#94A3B8] uppercase font-bold block">Base de Datos</span>
+                    <span class="text-sm font-medium text-[#1E293B]">Supabase (PostgreSQL)</span>
+                </div>
+                <div>
+                    <span class="text-xs text-[#94A3B8] uppercase font-bold block">Despliegue</span>
+                    <span class="text-sm font-medium text-[#1E293B]">Vercel / Render</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EL PROBLEMA -->
+        <section class="max-w-4xl mx-auto px-6 py-8 space-y-4">
+            <div class="bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm space-y-3">
+                <span class="text-xs font-bold tracking-wider text-[#4F46E5] uppercase">📌 EL PROBLEMA</span>
+                <h2 class="text-2xl font-bold text-[#1E293B]">Fragmentación en la gestión municipal</h2>
+                <p class="text-[#64748B] leading-relaxed">
+                    En la gestión municipal tradicional, la recepción de reclamos urbanos (baches, luminarias fuera de servicio, basurales a cielo abierto) sufre de una gran fragmentación. Los vecinos deben recurrir a llamadas telefónicas, trámites presenciales o mensajes informales que terminan perdiéndose o duplicándose. Esto genera un cuello de botella administrativo en las dependencias públicas, falta de trazabilidad en la resolución de problemas y una creciente percepción de desconexión por parte del ciudadano.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: LA SOLUCIÓN -->
+        <section class="max-w-4xl mx-auto px-6 py-4 space-y-4">
+            <div class="bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm space-y-3">
+                <span class="text-xs font-bold tracking-wider text-[#10B981] uppercase">💡 LA SOLUCIÓN</span>
+                <h2 class="text-2xl font-bold text-[#1E293B]">Transformación digital y agilidad</h2>
+                <p class="text-[#64748B] leading-relaxed">
+                    FixApp transforma un proceso burocrático de días en un flujo digital de menos de 30 segundos. Mediante una arquitectura basada en una PWA (Progressive Web App) de rápida adopción para el ciudadano y un ecosistema administrativo protegido, mantiene un estricto blindaje de datos personales conforme a la Ley N° 25.326.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: MÓDULOS E INTERFACES -->
+        <section class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+            <div class="space-y-3">
+                <span class="text-xs font-bold tracking-wider text-[#4F46E5] uppercase">🖥️ MÓDULOS DEL SISTEMA</span>
+                <h2 class="text-3xl font-bold text-[#1E293B]">Interfaces y Arquitectura Funcional</h2>
+            </div>
+
+            <!-- Módulo 1: Portal Ciudadano (Móvil) -->
+            <div class="space-y-4 bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
+                <div class="space-y-2">
+                    <span class="text-xs font-semibold text-[#4F46E5]">MÓDULO 01</span>
+                    <h3 class="text-xl font-bold text-[#1E293B]">Portal Ciudadano / Pantalla Vecinal (PWA)</h3>
+                    <p class="text-sm text-[#64748B]">Diseñada bajo el principio Mobile-First para garantizar accesibilidad instantánea sin instalaciones pesadas.</p>
+                </div>
+                <ul class="space-y-2 text-sm text-[#64748B] list-disc list-inside">
+                    <li><strong class="text-[#1E293B]">Mapa Interactivo y Geolocalización:</strong> Fijar ubicación exacta por GPS o selección manual.</li>
+                    <li><strong class="text-[#1E293B]">Carga Express (30s):</strong> Formulario dinámico con categoría, descripción y evidencia fotográfica optimizada en la nube.</li>
+                    <li><strong class="text-[#1E293B]">Anonimización por Diseño:</strong> Protección activa de la identidad del vecino en el seguimiento público.</li>
+                </ul>
+                
+                <!-- Mockup Dispositivo Móvil -->
+                <div class="flex justify-center pt-6">
+                    <div class="w-full max-w-xs bg-white rounded-[2.5rem] border-[8px] border-[#1E293B] shadow-xl overflow-hidden relative">
+                        <div class="bg-[#1E293B] py-2 px-6 flex justify-between items-center text-white text-[11px] font-mono select-none">
+                            <span>9:41</span>
+                            <div class="w-16 h-3 bg-black rounded-full"></div>
+                            <span>100%</span>
+                        </div>
+                        <div class="max-h-[480px] overflow-y-auto no-scrollbar">
+                            <img src="assets/img/fixapp_panel_vecinal.png" alt="Portal Ciudadano FixApp" class="w-full h-auto block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 2: Panel de Administración (Login + Dashboard) -->
+            <div class="space-y-6 bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
+                <div class="space-y-2">
+                    <span class="text-xs font-semibold text-[#4F46E5]">MÓDULO 02</span>
+                    <h3 class="text-xl font-bold text-[#1E293B]">Panel de Administración y Control de Accesos</h3>
+                    <p class="text-sm text-[#64748B]">Centro de mando seguro exclusivo para operadores y funcionarios municipales.</p>
+                </div>
+                <ul class="space-y-2 text-sm text-[#64748B] list-disc list-inside">
+                    <li><strong class="text-[#1E293B]">Autenticación Segura (RBAC):</strong> Control de acceso por credenciales cifradas y tokens JWT para proteger las operaciones del Estado.</li>
+                    <li><strong class="text-[#1E293B]">Gestión por Estados:</strong> Interfaz en tiempo real para filtrar y actualizar solicitudes (Pendiente, En Proceso, Resuelto).</li>
+                    <li><strong class="text-[#1E293B]">Trazabilidad de Cuadrillas:</strong> Asignación de tareas y registro fotográfico previo al cierre de cada reclamo.</li>
+                </ul>
+
+                <!-- Sub-mockup 1: Pantalla de Login Admin -->
+                <div class="pt-4">
+                    <p class="text-xs font-bold text-[#94A3B8] uppercase tracking-wider mb-2">A. Pantalla de Autenticación Segura</p>
+                    <div class="w-full bg-[#1E293B] rounded-xl shadow-xl overflow-hidden border border-[#334155]">
+                        <div class="bg-[#0F172A] px-4 py-3 flex items-center justify-between border-b border-[#334155]">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-[#EF4444]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#F59E0B]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#10B981]"></div>
+                            </div>
+                            <div class="bg-[#1E293B] text-gray-400 text-xs px-6 py-1 rounded-md font-mono flex items-center gap-2 justify-center border border-[#334155]/50">
+                                <span class="text-emerald-400">https://</span>fix-app-pi.vercel.app/admin.html
+                            </div>
+                            <div class="w-10"></div>
+                        </div>
+                        <div class="bg-slate-900 p-2">
+                            <img src="assets/img/fixapp_login.png" alt="Login Admin FixApp" class="w-full h-auto rounded-lg block">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-mockup 2: Panel de Gestión Municipal (Dashboard) -->
+                <div class="pt-4">
+                    <p class="text-xs font-bold text-[#94A3B8] uppercase tracking-wider mb-2">B. Dashboard de Gestión y Listado General</p>
+                    <div class="w-full bg-[#1E293B] rounded-xl shadow-xl overflow-hidden border border-[#334155]">
+                        <div class="bg-[#0F172A] px-4 py-3 flex items-center justify-between border-b border-[#334155]">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-[#EF4444]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#F59E0B]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#10B981]"></div>
+                            </div>
+                            <div class="bg-[#1E293B] text-gray-400 text-xs px-6 py-1 rounded-md font-mono flex items-center gap-2 justify-center border border-[#334155]/50">
+                                <span class="text-emerald-400">https://</span>fix-app-pi.vercel.app/admin.html
+                            </div>
+                            <div class="w-10"></div>
+                        </div>
+                        <div class="max-h-[520px] overflow-y-auto no-scrollbar bg-slate-50">
+                            <img src="assets/img/fixapp_panel_admin.png" alt="Panel de Administración FixApp" class="w-full h-auto block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 3: Panel de Telemetría -->
+            <div class="space-y-4 bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
+                <div class="space-y-2">
+                    <span class="text-xs font-semibold text-[#4F46E5]">MÓDULO 03</span>
+                    <h3 class="text-xl font-bold text-[#1E293B]">Panel de Telemetría y Dashboard Estadístico</h3>
+                    <p class="text-sm text-[#64748B]">Módulo analítico para directivos e intendencia enfocado en la toma de decisiones basada en datos.</p>
+                </div>
+                <ul class="space-y-2 text-sm text-[#64748B] list-disc list-inside">
+                    <li><strong class="text-[#1E293B]">Gráficos (Charts):</strong> Visualización interactiva del estado general de reclamos y distribución por categorías.</li>
+                    <li><strong class="text-[#1E293B]">Métricas de Eficiencia (KPIs):</strong> Tarjetas de control en tiempo real sobre volúmenes por categoría (baches, luminarias, basura, etc.).</li>
+                </ul>
+
+                <!-- Mockup Ventana de Navegador para Telemetría -->
+                <div class="pt-6">
+                    <div class="w-full bg-[#1E293B] rounded-xl shadow-2xl overflow-hidden border border-[#334155]">
+                        <div class="bg-[#0F172A] px-4 py-3 flex items-center justify-between border-b border-[#334155]">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-[#EF4444]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#F59E0B]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#10B981]"></div>
+                            </div>
+                            <div class="bg-[#1E293B] text-gray-400 text-xs px-6 py-1 rounded-md font-mono flex items-center gap-2 justify-center border border-[#334155]/50">
+                                <span class="text-emerald-400">https://</span>fix-app-pi.vercel.app/estadisticas.html
+                            </div>
+                            <div class="w-10"></div>
+                        </div>
+                        <div class="max-h-[520px] overflow-y-auto no-scrollbar bg-slate-50">
+                            <img src="assets/img/fixapp_telemetria.png" alt="Panel de Telemetría FixApp" class="w-full h-auto block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: STACK TECNOLÓGICO -->
+        <section class="max-w-4xl mx-auto px-6 py-8">
+            <div class="bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm space-y-4">
+                <span class="text-xs font-bold tracking-wider text-[#4F46E5] uppercase">🛠️ STACK TECNOLÓGICO Y ARQUITECTURA</span>
+                <h2 class="text-2xl font-bold text-[#1E293B]">Tecnologías de nivel de producción</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 text-sm text-[#64748B]">
+                    <div class="space-y-2">
+                        <p><strong>Frontend:</strong> HTML5, Tailwind CSS, JavaScript Vanilla (ES Modules), PWA.</p>
+                        <p><strong>Backend:</strong> FastAPI (Python), RESTful, validación y sanitización (Anti-XSS, Rate-Limiting).</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p><strong>Base de Datos:</strong> PostgreSQL en Supabase (RLS) + Cloudinary para gestión de medios.</p>
+                        <p><strong>Infraestructura:</strong> Despliegue en Vercel / Render, agnóstico y portable a AWS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EL RESULTADO -->
+        <section class="max-w-4xl mx-auto px-6 py-12">
+            <div class="bg-[#1E293B] text-white p-8 md:p-12 rounded-3xl space-y-6 shadow-xl">
+                <span class="text-xs font-bold tracking-wider text-[#10B981] uppercase">🎯 EL RESULTADO</span>
+                <h2 class="text-3xl font-bold tracking-tight">Hacia un modelo proactivo de ciudad inteligente</h2>
+                <p class="text-[#94A3B8] leading-relaxed">
+                    FixApp demuestra cómo el software local puede resolver problemas comunitarios de gran escala combinando soberanía tecnológica, resiliencia ante ciberataques y una experiencia de usuario intuitiva. Un sistema de alto rendimiento, auditable y listo para producción.
+                </p>
+                <div class="pt-4">
+                    <a href="https://fix-app-pi.vercel.app/" target="_blank" class="inline-block bg-[#4F46E5] hover:bg-[#4338CA] text-white px-8 py-3.5 rounded-xl font-medium transition-all shadow-sm">
+                        Abrir FixApp PWA en vivo ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white text-[#64748B] py-12 border-t border-[#E2E8F0] mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p class="text-sm text-[#94A3B8]">© 2026 Santiago Nahuel Corleta. Construido con HTML5 & Tailwind CSS.</p>
+            <a href="index.html" class="text-sm text-[#4F46E5] hover:underline font-medium">← Volver al inicio</a>
+        </div>
+    </footer>
+
+</body>
+</html>
