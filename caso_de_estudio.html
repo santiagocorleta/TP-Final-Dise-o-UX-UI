@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caso de Estudio: FixApp — Gestión Urbana Inteligente | Santiago Nahuel Corleta</title>
+    <meta name="description" content="Caso de estudio técnico de FixApp: Solución GovTech de gestión urbana inteligente desarrollada con FastAPI, Supabase y arquitectura PWA.">
+    <meta name="author" content="Santiago Nahuel Corleta">
+    <meta property="og:title" content="Caso de Estudio: FixApp — Gestión Urbana Inteligente | Santiago Nahuel Corleta">
+    <meta property="og:description" content="Arquitectura modular full-stack para digitalizar y optimizar la gestión de incidencias urbanas en tiempo real.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="assets/img/fixapp_mockup.png">
+    <meta name="theme-color" content="#4F46E5">
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +22,13 @@
             display: none;
         }
         .no-scrollbar {
-            -ms-overflow-style: none;  /* IE y Edge */
-            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none; 
+            scrollbar-width: none;  
         }
     </style>
 </head>
 <body class="bg-[#F8FAFC] text-[#1E293B] antialiased flex flex-col min-h-screen">
 
-    <!-- HEADER / NAVEGACIÓN -->
     <header class="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-[#64748B] hover:text-[#4F46E5] transition-colors">
@@ -36,10 +43,7 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-grow">
-        
-        <!-- HERO DEL CASO DE ESTUDIO -->
+    <main class="flex-grow">       
         <section class="py-16 max-w-4xl mx-auto px-6 space-y-6">
             <div class="flex items-center gap-3">
                 <span class="px-3 py-1 bg-[#4F46E5]/10 text-[#4F46E5] text-xs font-semibold rounded-full">GovTech / Full-Stack</span>
@@ -52,7 +56,6 @@
                 Solución integral GovTech diseñada para digitalizar, centralizar y optimizar la gestión de incidencias urbanas en tiempo real mediante una PWA rápida y un ecosistema administrativo protegido.
             </p>
 
-            <!-- Metadata del proyecto -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-[#E2E8F0]">
                 <div>
                     <span class="text-xs text-[#94A3B8] uppercase font-bold block">Arquitectura</span>
@@ -73,7 +76,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN: EL PROBLEMA -->
         <section class="max-w-4xl mx-auto px-6 py-8 space-y-4">
             <div class="bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm space-y-3">
                 <span class="text-xs font-bold tracking-wider text-[#4F46E5] uppercase">📌 EL PROBLEMA</span>
@@ -84,7 +86,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN: LA SOLUCIÓN -->
         <section class="max-w-4xl mx-auto px-6 py-4 space-y-4">
             <div class="bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm space-y-3">
                 <span class="text-xs font-bold tracking-wider text-[#10B981] uppercase">💡 LA SOLUCIÓN</span>
@@ -95,14 +96,12 @@
             </div>
         </section>
 
-        <!-- SECCIÓN: MÓDULOS E INTERFACES -->
         <section class="max-w-4xl mx-auto px-6 py-12 space-y-12">
             <div class="space-y-3">
                 <span class="text-xs font-bold tracking-wider text-[#4F46E5] uppercase">🖥️ MÓDULOS DEL SISTEMA</span>
                 <h2 class="text-3xl font-bold text-[#1E293B]">Interfaces y Arquitectura Funcional</h2>
             </div>
 
-            <!-- Módulo 1: Portal Ciudadano (Móvil) -->
             <div class="space-y-4 bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
                 <div class="space-y-2">
                     <span class="text-xs font-semibold text-[#4F46E5]">MÓDULO 01</span>
@@ -115,7 +114,6 @@
                     <li><strong class="text-[#1E293B]">Anonimización por Diseño:</strong> Protección activa de la identidad del vecino en el seguimiento público.</li>
                 </ul>
                 
-                <!-- Mockup Dispositivo Móvil -->
                 <div class="flex justify-center pt-6">
                     <div class="w-full max-w-xs bg-white rounded-[2.5rem] border-[8px] border-[#1E293B] shadow-xl overflow-hidden relative">
                         <div class="bg-[#1E293B] py-2 px-6 flex justify-between items-center text-white text-[11px] font-mono select-none">
@@ -130,7 +128,6 @@
                 </div>
             </div>
 
-            <!-- Módulo 2: Panel de Administración (Login + Dashboard) -->
             <div class="space-y-6 bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
                 <div class="space-y-2">
                     <span class="text-xs font-semibold text-[#4F46E5]">MÓDULO 02</span>
@@ -143,7 +140,6 @@
                     <li><strong class="text-[#1E293B]">Trazabilidad de Cuadrillas:</strong> Asignación de tareas y registro fotográfico previo al cierre de cada reclamo.</li>
                 </ul>
 
-                <!-- Sub-mockup 1: Pantalla de Login Admin -->
                 <div class="pt-4">
                     <p class="text-xs font-bold text-[#94A3B8] uppercase tracking-wider mb-2">A. Pantalla de Autenticación Segura</p>
                     <div class="w-full bg-[#1E293B] rounded-xl shadow-xl overflow-hidden border border-[#334155]">
@@ -164,7 +160,6 @@
                     </div>
                 </div>
 
-                <!-- Sub-mockup 2: Panel de Gestión Municipal (Dashboard) -->
                 <div class="pt-4">
                     <p class="text-xs font-bold text-[#94A3B8] uppercase tracking-wider mb-2">B. Dashboard de Gestión y Listado General</p>
                     <div class="w-full bg-[#1E293B] rounded-xl shadow-xl overflow-hidden border border-[#334155]">
@@ -186,7 +181,6 @@
                 </div>
             </div>
 
-            <!-- Módulo 3: Panel de Telemetría -->
             <div class="space-y-4 bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
                 <div class="space-y-2">
                     <span class="text-xs font-semibold text-[#4F46E5]">MÓDULO 03</span>
@@ -198,7 +192,6 @@
                     <li><strong class="text-[#1E293B]">Métricas de Eficiencia (KPIs):</strong> Tarjetas de control en tiempo real sobre volúmenes por categoría (baches, luminarias, basura, etc.).</li>
                 </ul>
 
-                <!-- Mockup Ventana de Navegador para Telemetría -->
                 <div class="pt-6">
                     <div class="w-full bg-[#1E293B] rounded-xl shadow-2xl overflow-hidden border border-[#334155]">
                         <div class="bg-[#0F172A] px-4 py-3 flex items-center justify-between border-b border-[#334155]">
@@ -220,7 +213,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN: STACK TECNOLÓGICO -->
         <section class="max-w-4xl mx-auto px-6 py-8">
             <div class="bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm space-y-4">
                 <span class="text-xs font-bold tracking-wider text-[#4F46E5] uppercase">🛠️ STACK TECNOLÓGICO Y ARQUITECTURA</span>
@@ -238,7 +230,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN: EL RESULTADO -->
         <section class="max-w-4xl mx-auto px-6 py-12">
             <div class="bg-[#1E293B] text-white p-8 md:p-12 rounded-3xl space-y-6 shadow-xl">
                 <span class="text-xs font-bold tracking-wider text-[#10B981] uppercase">🎯 EL RESULTADO</span>
@@ -256,7 +247,6 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-white text-[#64748B] py-12 border-t border-[#E2E8F0] mt-auto">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
             <p class="text-sm text-[#94A3B8]">© 2026 Santiago Nahuel Corleta. Construido con HTML5 & Tailwind CSS.</p>
