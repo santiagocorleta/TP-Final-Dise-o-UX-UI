@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Nahuel Corleta | Lic. en Sistemas / Frontend Dev</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,18 +14,14 @@
 </head>
 <body class="bg-[#F8FAFC] text-[#1E293B] antialiased flex flex-col min-h-screen">
 
-    <!-- HEADER / NAVEGACIÓN -->
     <header class="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo e Inicio con separación correcta -->
             <div class="flex items-center gap-8">
                 <a href="#hero" class="flex items-center">
-                    <!-- Logo real desde tu carpeta docs -->
                     <img src="assets/img/logo.png" alt="SNC Logo" class="h-9 w-auto object-contain">
                 </a>
             </div>
             
-            <!-- Navegación Desktop Central -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#64748B]">
                 <a href="#inicio" class="hover:text-[#4F46E5] transition-colors">Inicio</a>
                 <a href="#habilidades" class="hover:text-[#4F46E5] transition-colors">Habilidades</a>
@@ -35,7 +30,6 @@
                 <a href="#sobre-mi" class="hover:text-[#4F46E5] transition-colors">Sobre mí</a>
             </nav>
 
-            <!-- CTA Derecho: Contacto a la izquierda de GitHub y LinkedIn -->
             <div class="flex items-center gap-6">
                 <a href="#contacto" class="bg-[#4F46E5] hover:bg-[#4338CA] text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-sm">
                     Contacto
@@ -49,7 +43,7 @@
     </header>
 
     <main class="flex-grow">
-        <section id="hero" class="py-20 md:py-32 max-w-7xl mx-auto px-6">
+        <section id="hero" class="py-12 md:py-20 max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10B981]/10 text-[#10B981] text-xs font-semibold">
@@ -68,7 +62,7 @@
                         <a href="#proyectos" class="bg-[#4F46E5] hover:bg-[#4338CA] text-white px-6 py-3 rounded-lg font-medium transition-all shadow-sm">
                             Ver Trabajos
                         </a>
-                        <a href="#contacto" class="border border-[#CBD5E1] hover:bg-[#E2E8F0] text-[#1E293B] px-6 py-3 rounded-lg font-medium transition-all">
+                        <a href="#contacto" class="bg-[#4F46E5] hover:bg-[#4338CA] text-white px-6 py-3 rounded-lg font-medium transition-all shadow-sm">
                             Contacto
                         </a>
                     </div>
@@ -98,7 +92,7 @@
             </div>
         </section>
 
-        <section class="max-w-7xl mx-auto px-6 pb-20">
+        <section class="max-w-7xl mx-auto px-6 pb-16">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] shadow-sm">
                     <p class="text-3xl font-bold text-[#4F46E5]">+3</p>
@@ -111,6 +105,58 @@
                 <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] shadow-sm">
                     <p class="text-3xl font-bold text-[#4F46E5]">100%</p>
                     <p class="text-sm text-[#64748B] mt-1">Código Modular</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="py-12 max-w-7xl mx-auto px-6">
+            <div class="space-y-2 mb-10">
+                <span class="text-xs font-bold tracking-wider text-[#4F46E5] uppercase">04 / HABILIDADES</span>
+                <h2 class="text-3xl font-bold tracking-tight text-[#1E293B]">Habilidades conectadas</h2>
+                <p class="text-[#64748B]">Del diseño de la interfaz a la lógica del sistema.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-[#10B981] shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-[#1E293B]">Diseño UX/UI</h3>
+                        <p class="text-sm text-[#64748B] leading-relaxed">
+                            Organizo información compleja y flujos de usuario para crear experiencias digitales claras, intuitivas y accesibles.
+                        </p>
+                    </div>
+                    <div class="space-y-2 pt-4 border-t border-[#10B981]/60">
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">Figma</div>
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">Wireframes</div>
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">Accesibilidad</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-[#10B981] shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-[#1E293B]">Arquitectura Frontend</h3>
+                        <p class="text-sm text-[#64748B] leading-relaxed">
+                            Desarrollo interfaces modulares con componentes reutilizables y estado predecible.
+                        </p>
+                    </div>
+                    <div class="space-y-2 pt-4 border-t border-[#10B981]/60">
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">HTML5 · CSS3</div>
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">JavaScript</div>
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">Tailwind CSS</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-[#10B981] shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-[#1E293B]">Backend & Systems</h3>
+                        <p class="text-sm text-[#64748B] leading-relaxed">
+                            Modelo datos e integro servicios robustos para conectar cada interfaz con su respectiva lógica funcional.
+                        </p>
+                    </div>
+                    <div class="space-y-2 pt-4 border-t border-[#10B981]/60">
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">Node.js · Express</div>
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">SQL</div>
+                        <div class="w-full py-2 px-4 rounded-full border border-[#10B981] text-xs font-medium text-[#475569] text-left bg-white">Git · API REST</div>
+                    </div>
                 </div>
             </div>
         </section>
