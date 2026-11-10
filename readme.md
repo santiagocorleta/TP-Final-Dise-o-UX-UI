@@ -1,6 +1,6 @@
 # 🌐 Portfolio Web Personal — Trabajo Final UX/UI
 
-Portfolio web personal desarrollado como trabajo final para la materia **Diseño UX/UI** de la Licenciatura en Sistemas de Información (UADER - FCyT)[cite: 5, 6].
+Portfolio web personal desarrollado como trabajo final para la materia **Diseño UX/UI** de la Licenciatura en Sistemas de Información (UADER - FCyT).
 
 ## 🔗 Enlaces del Proyecto
 - **Sitio en vivo (Deploy):** [Ver Portfolio Desplegado](https://portfoliosantiagocorleta.netlify.app/)
@@ -8,9 +8,9 @@ Portfolio web personal desarrollado como trabajo final para la materia **Diseño
 
 ## 🛠️ Stack Tecnológico
 - **Estructura:** HTML5 Semántico.
-- **Estilos:** Tailwind CSS (v4)[cite: 5].
-- **Control de Versiones:** Git y GitHub (con historial incremental de commits)[cite: 6].
-- **Despliegue:** Vercel[cite: 8].
+- **Estilos:** Tailwind CSS (v4).
+- **Control de Versiones:** Git y GitHub (con historial incremental de commits).
+- **Despliegue:** Vercel.
 
 ---
 
@@ -42,9 +42,9 @@ En cumplimiento con la política de uso transparente de IA de la materia:
 ---
 
 ## 📄 Créditos, Recursos y Proceso de Deploy
-- **Proceso de Deploy:** Integración continua mediante GitHub conectado a **Vercel** para despliegue automático tras cada `push` a la rama principal[cite: 8].
+- **Proceso de Deploy:** Integración continua mediante GitHub conectado a **Netlify** para despliegue automático tras cada `push` a la rama principal.
 - **Tipografía:** Google Fonts (*Inter*).
 - **Activos de Imagen:** Optimización de activos PNG/JPG a formato WebP (`logo.webp`, `perfil.webp`, `mockups.webp`).
 
 ---
-Desarrollado por **Santiago Nahuel Corleta** (2026)[cite: 5].
+Desarrollado por **Santiago Nahuel Corleta** (2026).
